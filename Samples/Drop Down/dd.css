@@ -1,0 +1,97 @@
+html, body
+{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container
+{
+  border-radius: 8px;
+  width: 200px;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 10, .1);
+  position: absolute;
+  background-color: #f2f2f3;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.container .text
+{
+	left: 30px;
+	width: 400px;
+	border: none;
+  background-color: #f2f2f3;
+}
+
+.container .text:focus-visible
+{
+	outline: none;
+}
+
+.arrow-container {
+	width: 50px;
+	user-select: none;
+}
+
+.arrow-container .arrow {
+	float: right;
+}
+
+.dd-container {
+	background-color: #f2f2f3;
+    width: 500px;
+    left: calc(40% - 95px);
+	top: 95px;
+    margin-top: 1px;
+	box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, .3);
+	border: 1px solid rgb(0, 0, 10, .1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    min-height: 144px;
+    overflow-y: auto;
+	position: absolute;	
+}
+
+.dd-container ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.dd-container li {
+    border: none;
+	background-color: transparent;
+	height: 35px;
+	font-size: 14px;
+	letter-spacing: .4px;
+	cursor: pointer;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding: 0 0 0 10px;
+}
+
+.dd-container li:hover {
+    background-color: #e2e2e2
+}
+
+.dd-container  li:active, .dd-container li.liselected {
+    background-color: #dad3eb
+}
+
+.container:active
+{
+  box-shadow: 6px 6px 12px 0px rgba(0, 0, 0, .3);
+}
